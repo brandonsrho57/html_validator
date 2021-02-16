@@ -23,7 +23,7 @@ def validate_html(html):
     # of not just the 3 types of parentheses,
     # but arbitrary text located between the html tags
 
-    stack = [blah]
+    stack = []
     tags = _extract_tags(html)
     if len(tags) <= 1 and len(html) > 0:
         return False
